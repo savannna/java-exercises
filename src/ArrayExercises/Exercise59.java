@@ -16,7 +16,8 @@ public class Exercise59 {
         int max_Product=Integer.MIN_VALUE;
         int maxIndex1=-1;
         int maxIndex2=-1;
-        //两次遍历 初始不同 外层是i=0,内层是j=i+1。使得不重复索引的在数组中取两个元素
+        //两次遍历 初始不同 外层是i=0,内层是j=i+1。
+        // 使得不重复索引的在数组中取两个元素
         for (int i = 0; i < arr.length; i++) {
             for (int j = i+1; j < arr.length; j++) {
                 if(max_Product<arr[i]*arr[j]){
