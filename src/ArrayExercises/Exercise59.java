@@ -12,6 +12,7 @@ public class Exercise59 {
 
     }
     public static void maxProduct (int[] arr){
+        //不停的赋值乘积值与任意两个数乘积比较
         int max_Product=Integer.MIN_VALUE;
         int maxIndex1=-1;
         int maxIndex2=-1;
@@ -22,6 +23,7 @@ public class Exercise59 {
                     max_Product=arr[i]*arr[j];
                     maxIndex1=i;
                     maxIndex2=j;
+                    System.out.println("乘积/值1/值2："+max_Product+"，"+arr[maxIndex1]+"，"+arr[maxIndex2]);
                 }
             }
         }
